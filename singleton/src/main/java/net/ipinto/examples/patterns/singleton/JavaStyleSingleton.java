@@ -10,7 +10,9 @@ public class JavaStyleSingleton {
     public static JavaStyleSingleton getInstance() {
         if (instance == null) {
             synchronized (JavaStyleSingleton.class) {
-                instance = new JavaStyleSingleton();
+                if (instance == null) {
+                    instance = new JavaStyleSingleton();
+                }
             }
         }
         return instance;
