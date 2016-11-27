@@ -3,6 +3,9 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'groovy'
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "Main"
 
 repositories {
     jcenter()
@@ -22,21 +25,8 @@ sourceSets {
             srcDirs = ['src/main/groovy']
         }
     }
-
-    test {
-        groovy {
-            srcDirs = ['src/test/groovy']
-        }
-    }
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.7' //version required
-}
-
-test {
-    //we want display the following test events
-    testLogging {
-        events "PASSED", "FAILED", "SKIPPED"
-    }
 }
