@@ -8,7 +8,7 @@ Each professional has a different workday, but all of us follow the same habits:
 * Sleep
 
 Check how it works:
-* [Main Class](https://github.com/ipinto/design-patterns-examples/blob/master/template-method/src/main/groovy/Main.groovy)
+* [Main Class](https://github.com/ipinto/design-patterns-examples/blob/master/template_method/src/main/groovy/Main.groovy)
 
 ## How to execute it
 ```
